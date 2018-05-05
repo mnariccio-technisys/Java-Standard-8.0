@@ -1,5 +1,7 @@
+package javaclase2;
 
-public class Vehiculo {
+
+public abstract class Vehiculo {
     protected String color, marca, modelo;
 
     public Vehiculo(String color, String marca, String modelo){
@@ -30,12 +32,9 @@ public class Vehiculo {
     }
     public void setModelo(String modelo) {
         this.modelo = modelo;
-    }   
-    
-    
-    public void frenar(){        
     }
-    public void acelerar(){        
-    }
+    
+    public abstract void acelerar();
+    public abstract void frenar();
     
 }

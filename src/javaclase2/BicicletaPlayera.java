@@ -3,19 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package javaclase2;
 
-/**
- *
- * @author EducaciónIT
- */
-public class Auto extends VehiculoMotorizado{
+public class BicicletaPlayera extends Bicicleta{
     
-    public Auto(String color, String marca, String modelo) {
+    public BicicletaPlayera(String color, String marca, String modelo) {
         super(color, marca, modelo);
     }
-    
-    public void abrirBaul(){
-        System.out.println("Abriendo baul...");
+
+    @Override
+    public void frenar() {
+        System.out.println("Contrapedaleando!...");
     }
+    
     
 }
