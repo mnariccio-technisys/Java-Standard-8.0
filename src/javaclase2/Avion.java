@@ -10,7 +10,7 @@ package javaclase2;
  *
  * @author EducaciónIT
  */
-public class Avion extends VehiculoMotorizado{
+public class Avion extends VehiculoMotorizado implements Volable{
     
     public Avion(String color, String marca, String modelo) {
         super(color, marca, modelo);
@@ -24,6 +24,26 @@ public class Avion extends VehiculoMotorizado{
     @Override
     public void frenar() {
         System.out.println("Frenando...");
+    }
+
+    @Override
+    public void despegar() {
+        System.out.println("Moviendo la palanca para despegar...");
+    }
+
+    @Override
+    public void volar() {
+        System.out.println("Volando...");
+    }
+
+    @Override
+    public void aterrizar() {
+        System.out.println("Aterrizando...");
+    }
+
+    @Override
+    public void avanzar() {
+        System.out.println("Avanzando...");
     }
     
 }

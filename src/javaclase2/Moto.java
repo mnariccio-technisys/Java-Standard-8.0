@@ -28,5 +28,10 @@ public class Moto extends VehiculoMotorizado {
     public void frenar() {
         System.out.println("Frenando...");        
     }
+
+    @Override
+    public void avanzar() {
+        System.out.println("Acelerando...");
+    }
     
 }

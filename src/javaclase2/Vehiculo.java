@@ -1,7 +1,7 @@
 package javaclase2;
 
 
-public abstract class Vehiculo {
+public abstract class Vehiculo implements Desplazable{
     protected String color, marca, modelo;
 
     public Vehiculo(String color, String marca, String modelo){

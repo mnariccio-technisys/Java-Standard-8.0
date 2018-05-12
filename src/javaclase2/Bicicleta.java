@@ -25,5 +25,10 @@ public class Bicicleta extends Vehiculo{
     public void frenar() {
         System.out.println("Frenando...");
     }
+
+    @Override
+    public void avanzar() {
+        System.out.println("Avanzando...");
+    }
     
 }

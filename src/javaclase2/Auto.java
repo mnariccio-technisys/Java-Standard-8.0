@@ -32,5 +32,10 @@ public class Auto extends VehiculoMotorizado{
     public void frenar() {
         System.out.println("Apretando el freno...");
     }
+
+    @Override
+    public void avanzar() {
+        System.out.println("Apretando el acelerador...");
+    }
     
 }

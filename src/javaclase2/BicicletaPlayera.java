@@ -14,7 +14,5 @@ public class BicicletaPlayera extends Bicicleta{
     @Override
     public void frenar() {
         System.out.println("Contrapedaleando!...");
-    }
-    
-    
+    }    
 }
