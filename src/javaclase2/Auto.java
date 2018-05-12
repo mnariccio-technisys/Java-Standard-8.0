@@ -15,6 +15,8 @@ import javaclase2.VehiculoMotorizado;
  */
 public class Auto extends VehiculoMotorizado{
     
+    private Desplazable desplazable = new DesplazableAMotor();
+    
     public Auto(String color, String marca, String modelo) {
         super(color, marca, modelo);
     }
@@ -30,12 +32,12 @@ public class Auto extends VehiculoMotorizado{
 
     @Override
     public void frenar() {
-        System.out.println("Apretando el freno...");
+        desplazable.frenar();
     }
 
     @Override
     public void avanzar() {
-        System.out.println("Apretando el acelerador...");
+        desplazable.avanzar();
     }
     
 }
